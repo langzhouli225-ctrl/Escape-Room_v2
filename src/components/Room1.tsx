@@ -18,15 +18,14 @@ interface Item {
 }
 
 const ITEMS: Item[] = [
-  { id: 'event_name', label: 'Event Name', correctBucket: 'PI' },
-  { id: 'event_date', label: 'Event Date', correctBucket: 'PI' },
-  { id: 'venue', label: 'Venue', correctBucket: 'PI' },
+  { id: 'name', label: 'Name', correctBucket: 'PI' },
   { id: 'work_unit', label: 'Work Unit', correctBucket: 'PI' },
   { id: 'phone', label: 'Phone Number', correctBucket: 'PI' },
   { id: 'email', label: 'Email Address', correctBucket: 'PI' },
   { id: 'id_number', label: 'ID Number', correctBucket: 'SPI' },
   { id: 'bank_account', label: 'Bank Account', correctBucket: 'SPI' },
   { id: 'role', label: 'Professional/Guideline Committee Role', correctBucket: 'PI' },
+  { id: 'attendance', label: 'Attendance Record', correctBucket: 'PI' },
 ];
 
 function DraggableItem({ item, onRemove }: { key?: React.Key, item: Item, onRemove?: () => void }) {
@@ -184,39 +183,36 @@ export default function Room1({ sessionId, onComplete }: Room1Props) {
             <table className="w-full text-sm text-left border-collapse">
               <thead>
                 <tr className="border-b-2 border-gray-400">
-                  <th className="p-2 font-bold">Event Name</th>
-                  <th className="p-2 font-bold">Event Date</th>
-                  <th className="p-2 font-bold">Venue</th>
+                  <th className="p-2 font-bold">Name</th>
                   <th className="p-2 font-bold">Work Unit</th>
                   <th className="p-2 font-bold">Phone Number</th>
                   <th className="p-2 font-bold">Email Address</th>
                   <th className="p-2 font-bold">ID Number</th>
                   <th className="p-2 font-bold">Bank Account</th>
                   <th className="p-2 font-bold">Professional Role</th>
+                  <th className="p-2 font-bold">Attendance Record</th>
                 </tr>
               </thead>
               <tbody className="font-mono text-xs">
                 <tr className="border-b border-gray-300">
-                  <td className="p-2">Gastroenterology Scientific Exchange 2025</td>
-                  <td className="p-2">18 Nov 2025</td>
-                  <td className="p-2">Chengdu Jinjiang Conference Center</td>
+                  <td className="p-2">Zhang San</td>
                   <td className="p-2">West China Hospital</td>
                   <td className="p-2">+86 13844238888</td>
                   <td className="p-2">Zhang_san@wchospital.cn</td>
-                  <td className="p-2">510101198012311234</td>
-                  <td className="p-2">6217000188231234</td>
+                  <td className="p-2">510101198012311000</td>
+                  <td className="p-2">6217000188231230</td>
                   <td className="p-2">Chinese Society of Gastroenterology IBD Committee Member</td>
+                  <td className="p-2">Gastroenterology Scientific Exchange 2024</td>
                 </tr>
                 <tr>
-                  <td className="p-2">Precision Oncology Forum 2025</td>
-                  <td className="p-2">05 Dec 2025</td>
-                  <td className="p-2">Shanghai Internal Medical Center</td>
+                  <td className="p-2">Li Si</td>
                   <td className="p-2">Ruijin Hospital</td>
                   <td className="p-2">+86 13977881122</td>
                   <td className="p-2">Li_si@rjhospital.cn</td>
-                  <td className="p-2">310110199012311234</td>
-                  <td className="p-2">6222848812345678</td>
+                  <td className="p-2">310110199012311000</td>
+                  <td className="p-2">6222848812345670</td>
                   <td className="p-2">CSCO Lung Cancer Committee Youth Member</td>
+                  <td className="p-2">Precision Oncology Forum 2024</td>
                 </tr>
               </tbody>
             </table>

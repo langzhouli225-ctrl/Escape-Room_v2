@@ -16,13 +16,13 @@ interface Field {
 }
 
 const INITIAL_FIELDS: Field[] = [
-  { id: 'speaker_id', category: 'Speaker ID', value: 'Speaker-2025-0834', shouldRemove: false },
+  { id: 'speaker_name', category: 'Speaker Name', value: 'Zhang San', shouldRemove: false },
   { id: 'city', category: 'City', value: 'Chengdu', shouldRemove: false },
   { id: 'arrival_time', category: 'Arrival Time', value: '17 Nov 2025 – 09:30', shouldRemove: false },
   { id: 'checkin_date', category: 'Hotel Check-in Date', value: '17 Nov 2025', shouldRemove: false },
   { id: 'mobile', category: 'Mobile Number', value: '+86 138 4423 8888', shouldRemove: false },
   { id: 'specialty', category: 'Specialty', value: 'Gastroenterology', shouldRemove: true },
-  { id: 'history', category: 'Congress Speaking History', value: 'Speaker – Provincial IBD Forum (Oct 2025)', shouldRemove: true },
+  { id: 'history', category: 'Congress Speaking History', value: 'Speaker – Provincial IBD Forum (Aug 2025)', shouldRemove: true },
   { id: 'score', category: 'Internal Engagement Score', value: '8.7 / 10', shouldRemove: true },
   { id: 'note', category: 'Internal CRM note', value: '"High scientific influence, low digital responsiveness"', shouldRemove: true },
   { id: 'pickup', category: 'Airport Pickup Needed', value: 'Yes', shouldRemove: false },
